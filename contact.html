@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<section class="contact-section">
+
+    <div class="contact-header">
+        <h1>Contact Me</h1>
+        <p>
+            Feel free to contact me for internships, freelance work,
+            collaborations, or any exciting opportunities.
+        </p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Left Side -->
+        <div class="contact-info">
+
+            <img src="{{ url_for('static', filename='css/profile.jpg') }}"
+                 alt="Profile Picture"
+                 class="contact-profile">
+
+            <h2>Your Name</h2>
+
+            <h4>Python & Flask Developer</h4>
+
+            <div class="contact-details">
+
+                <p>📧 deepak@gmail.com</p>
+
+                <p>📱 +91 9876543210</p>
+
+                <p>📍 Chennai, Tamil Nadu</p>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#">GitHub</a>
+
+                <a href="#">LinkedIn</a>
+
+                <a href="#">Instagram</a>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <br class="contact-form">
+
+            <h2>Send Me a Message</h2>
+
+            <br>
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+                <br></br>
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                 <br></br>
+                <label for="subject">Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter subject"
+                >
+                 <br></br>
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+                 <br></br>
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

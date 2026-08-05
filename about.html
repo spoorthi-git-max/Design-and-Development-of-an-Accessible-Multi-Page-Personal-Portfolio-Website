@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<section class="about-section">
+
+    <div class="about-container">
+
+        <!-- Profile -->
+        <div class="profile-card">
+
+            <img src="{{ url_for('static', filename='css/profile.jpg') }}"
+            alt="Profile Picture"
+            class="profile-image">
+
+            <h2>Deepak</h2>
+
+            <h4>Python & Flask Developer</h4>
+
+            <p>
+                Passionate about developing responsive and accessible
+                web applications using Python, Flask, HTML5, CSS3,
+                JavaScript, and SQL.
+            </p>
+
+        </div>
+
+        <!-- About Details -->
+        <div class="about-content">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I'm a passionate software developer who enjoys
+                building modern, responsive, and user-friendly web
+                applications. I love learning new technologies and
+                solving real-world problems through programming.
+            </p>
+
+            <!-- Education -->
+            <div class="info-card">
+
+                <h3>🎓 Education</h3>
+
+                <ul>
+                    <li><strong>B.Sc Computer Science</strong></li>
+                    <li>ABC College</li>
+                    <li>2023 - 2026</li>
+                </ul>
+
+            </div>
+
+            <!-- Skills -->
+            <div class="info-card">
+
+                <h3>💻 Technical Skills</h3>
+
+                <div class="skills">
+
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                    <span>MySQL</span>
+                    <span>Git</span>
+
+                </div>
+
+            </div>
+
+            <!-- Personal Details -->
+            <div class="info-card">
+
+                <h3>📋 Personal Information</h3>
+
+                <p><strong>Name:</strong> Your Name</p>
+                <p><strong>Email:</strong> yourname@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9876543210</p>
+                <p><strong>Location:</strong> Chennai, India</p>
+
+            </div>
+
+            <!-- Career Objective -->
+            <div class="info-card">
+
+                <h3>🎯 Career Objective</h3>
+
+                <p>
+                    To secure a challenging position where I can
+                    apply my programming knowledge, enhance my
+                    technical skills, and contribute to innovative
+                    software development projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
